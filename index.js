@@ -25,8 +25,7 @@ form.addEventListener("submit",(e)=>{
   doc.setFontSize(40)
   doc.text(20, 20, 'Personal Details');
 
-  doc.text('Hello world!', 10, 10)
-  doc.save('a4.pdf')  
+  doc.text('Hello world!', 10, 10);
 
   doc.save(`${fullName}.pdf`);
 
