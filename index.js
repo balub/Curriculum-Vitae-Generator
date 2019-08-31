@@ -22,10 +22,13 @@ form.addEventListener("submit",(e)=>{
 
   let doc = new jsPDF();
 
-  doc.setFontSize(40)
-  doc.text(20, 20, 'Personal Details');
-
-  doc.text('Hello world!', 10, 10);
+  doc.setFontSize(40);
+  doc.text(50, 20, 'Personal Details');
+  
+  doc.setFontSize(20);
+  doc.text(20,30, "Full Name :");
+  doc.setFontSize(20);
+  doc.text(60,30, fullName);
 
   doc.save(`${fullName}.pdf`);
 
