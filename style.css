@@ -64,6 +64,7 @@ input[type=submit]:hover {
 }
 .w3-card-2{
     border-radius: 5px;
+    animation: slide 1s ease-out 0s 1 ;
 }
 .w3-card-2:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
@@ -72,4 +73,13 @@ input[type=submit]:hover {
 .footer{
     width: 100%;
     text-align: center;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
